@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PRAVIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    <div id="myNav" class="navbar">
+        <a class="navbar-brandname">P R A V I N</a>
+        <ul id="navlinks" class="navbar-navlinks">
+            <li class="navbar-navlink">RESUME</li>
+            <li class="navbar-navlink" data-id="contactModal" onclick="loadModal(event)">Contact</li>
+        </ul>
+        <a class="navbar-toggler" onclick="toggleNavbar(event)">X</a>
+    </div>
+    
+    <div class="nav-scroll"><div></div></div>
+
+
+    <div class="container">
+        <div class="container-banner">
+            <h1 style="font-size: 5vw;">Hello ;</h1>
+            <h1 style="font-size: 5vw;display: none;"></h1>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="container-about">
+            <h1 class="container-header">About Me</h1>
+            <h5>Hi everyone,</h5>
+            <p>I am an enthusiastic fresher with
+                high motivation and have a bachelor's degree in Computer Engineering from CKPCET, Surat.</p>
+            <p>I am always eager to learn about new technologies and methodologies.
+                I love solving complex real-world problems, I am participating in various online coding challenges and
+                trying to solve them.</p>
+
+            <a id="loadAboutme" onclick="loadAboutme(event)" class="fa-solid fa-angle-down"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-education">
+            <h1 class="container-header">Education</h1>
+            <div class="card">
+                <div class="card-head">
+                    <h2>C.K PITHAWALA COLLEGE</h2>
+                </div>
+                <div class="card-body">
+                    <p>B.E in Computer Science</p>
+                    <p class="card-year">Aug-2016 To Aug-2020</p>
+                    <p class="education-course">DSA , DBMS , WEB Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-experience">
+            <h1 class="container-header">Experience</h1>
+            <div class="card">
+                <div class="card-head">
+                    <h2>Web Developer Intern</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card-img">
+                        <img src="assets/logo/easycloud.png">
+                    </div>
+                    <p class="card-year">May-2023</p>
+                    <p>Key Role</p>
+                    <ul>
+                        <li>Learn Html,Js,Css,Jquery.</li>
+                        <li>Build a static Portfolio website.</li>
+                        <li>Learn core .Net & C#</li>
+                        <li>Writen the code for games logic in JS.</li>
+                        <li>Build cardboard games with the JS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-tech">
+            <h1 class="container-header">Tech</h1>
+            <div class="d-flex">
+                <div class="img-container">
+                    <img src="assets/vector_img/vector-tech.png">
+                </div>
+                <div id="technology" class="tech">
+                    <div class="tech-type">
+                        <h1>Web Development</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/html5.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/javascript.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/css3.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/react.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/node-js.png"></a>
+                        </div>
+                    </div>
+                    <div class="tech-type">
+                        <h1>Programming</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/c (1).png"></a>
+                            <a><img class="tech-logo" src="assets/logo/c.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/python.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/java.png"></a>
+                        </div>
+                    </div>
+                    <div class="tech-type">
+                        <h1>Database</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/mysql.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/mongodb.png"></a>
+                        </div>
+                    </div>
+                    <div class="tech-type">
+                        <h1>DevOps</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/github.png"></a>
+                            <a><img class="tech-logo" src="assets/logo/postman.png"></a>
+                        </div>
+                    </div>
+                    <div class="tech-type">
+                        <h1>App Development</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/android-studio.png"></a>
+                        </div>
+                    </div>
+                    <div class="tech-type">
+                        <h1>Designing</h1>
+                        <div class="d-flex">
+                            <a><img class="tech-logo" src="assets/logo/adobe-illustrator.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="container-header" style="margin: 5% 10% ;">Projects</h1>
+        <div class="container-projects">
+            <div class="project-card pcl">
+                <h1 class="project-header">Algorithm-Visualizer</h4>
+                    <p>React App which contains visualizations of various sorting algorithms.</p>
+                    <a><i class="fa-solid fa-arrow-right text-white"></i></a>
+            </div>
+            <div class="project-card pcr">
+                <h1 class="project-header">Flipkart Clone</h4>
+                    <p>Clone React app of Flipkart.In which user can
+                        view,buy,place order of the items available in stock
+                    </p>
+                    <a><i class="fa-solid fa-arrow-right text-white"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-about">
+                <p class="footer-tag">About Me</p>
+                <p>I am a Software Developer, haha kidding i am noob, Here are my links</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/pravin-rathod-ba1161277/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/pravinxrathod" target="_blank"><i class="fa-brands fa-github fa-2xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=919638202445&text&type=phone_number&app_absent=0"
+                        target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <span>
+                    <p class="footer-tag">Email</p>
+                    <p>pravin0rat@gmail.com</p>
+                </span>
+                <p class="footer-tag">Phone</p>
+                <p>9638202445</p>
+            </div>
+            <div class="footer-quick">
+                <p class="footer-tag">Quick links</p>
+                <a class="footer-tag" href="resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Thank you for visiting</p>
+        </div>
+    </div>
+
+
+    <div id="contactModal" class="modal-container" onclick="unloadModal(event)">
+        <div class="modal">
+            <div class="modal-head">
+                <p class="btn-close" data-id="contactModal" onclick="unloadModal(event)">&times;</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-desc">
+                    <h1 class="modal-desc-header">Hi there,</h1>
+                    <img class="modal-desc-img" src="assets/vector_img/contact.png">
+                    <p>Thank you for visiting.</p>
+                    <p>If you want me to contact you please provide your information.</p>
+                </div>
+                <div class="form-container">
+                    <form name="contactForm" class="contactForm">
+                        <div class="input-field">
+                            <input id="company_name" type="text" required>
+                            <label for="company_name">Company Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="text" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="number" type="number" required>
+                            <label for="number">Phone</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="message" type="text" required>
+                            <label for="message">Any Message ?</label>
+                        </div>
+                        <button class="btn-submit">S E N D</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="fa-solid fa-angle-up scroll-up" onclick="scrollUpWindow(event)"></p>
+
+    <script src="https://kit.fontawesome.com/0a4f722c5b.js" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/windowLoader.js"></script>
+    <script src="scripts/windowScroll.js"></script>
+</body>
+
+</html>
