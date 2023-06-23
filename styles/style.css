@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+*::selection {
+    background-color: #fff;
+    color: #0B10D4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0B10D4;
+    color: #fff;
+}
+
+.d-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-banner {
+    background-color: #0B10D4;
+    text-align: center;
+    padding: 100px;
+}
+
+.container-header {
+    font-size: 4vh;
+    padding: 5px 10px;
+    color: #0B10D4;
+    background-color: #fff;
+    width: max-content;
+}
+
+.container-about {
+    margin: 10%;
+    transform: translateX(-100px);
+    opacity: 0%;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.container-about h5,
+.container-about p {
+    margin: 2vh 0;
+    font-size: 3vh;
+    text-align: justify;
+    width: fit-content;
+}
+
+.container-about a {
+    margin: 0 auto;
+}
+
+#loadAboutme {
+    display: none;
+}
+
+
+.container-education {
+    margin: 10%;
+    transform: translateX(100px);
+    opacity: 0%;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card {
+    position: relative;
+    top: 0;
+    margin: 20px auto;
+    width: 30vw;
+    background-color: #fff;
+    box-shadow: 0 8px 6px -6px black;
+    color: #0B10D4;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    top: -10px;
+}
+
+.card-head {
+    font-size: 1.5vw;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 5px 0px;
+}
+
+.card-body p {
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.card-year {
+    background-color: #0B10D4;
+    color: #fff !important;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.card-img {
+    width: fit-content;
+    margin: 10px auto;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.card-body ul {
+    color: #000;
+}
+
+.card-body li {
+    display: block;
+    margin: 5px 10px;
+}
+
+.container-experience {
+    margin: 10%;
+    transform: translateY(-100px);
+    opacity: 0%;
+    transition: all 0.2s ease;
+}
+
+.container-tech {
+    margin: 10%;
+    transform: translateX(-100px);
+    opacity: 0%;
+    transition: all 0.2s ease;
+}
+
+.img-container {
+    width: 40%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.tech {
+    width: 60%;
+}
+
+.tech-type {
+    text-align: center;
+    display: none;
+}
+
+.tech-logo {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.container-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.project-card {
+    padding: 50px;
+    text-align: center;
+}
+
+.pcr {
+    background-color: #00008B;
+}
+
+.pcl {
+    background-color: #0800E1;
+}
+
+.project-card p {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.project-header {
+    color: #ffffff;
+    width: fit-content;
+    border-bottom: 1px solid;
+}
+
+.project-card a:hover {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1C1C1C;
+}
+
+.footer-about {
+    margin: 30px;
+}
+
+.footer-body {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    margin-right: 10px;
+}
+
+.footer-contact {
+    margin: 30px;
+}
+
+.footer-tag {
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 5px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.footer-quick {
+    margin: 30px;
+}
+
+.footer-quick a {
+    cursor: pointer;
+}
+
+.footer-bottom p {
+    background-color: #151516;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.custom-cursor{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 100;
+}
+
+.scroll-up{
+    position: fixed;
+    bottom: 25px;
+    right: -100px;
+    padding: 20px;
+    background-color: #fff;
+    color: #0B10D4;
+    border-radius: 50%;
+    opacity: 0%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:650px) {
+    .container-about p:not(:first-of-type) {
+        display: none;
+    }
+
+    #loadAboutme {
+        display: block;
+    }
+
+    .container-about.expand-content p {
+        display: block;
+    }
+
+    .img-container {
+        display: none;
+    }
+}
